@@ -10,8 +10,8 @@ public class DBUtil {
 		try 
 		{
 			
-			Class.forName("oracle.jdbc.driver.OracleDriver");
-		    conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","system");
+			Class.forName("com.mysql.jdbc.Driver");
+		    conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/abhay","root","root");
 		
 		}
 		catch(Exception e)
